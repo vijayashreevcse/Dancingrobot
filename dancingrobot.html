@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            margin-left: 200px;
+            font-style: oblique;
+            color: red;
+    
+        }
+        .m{
+            height: 500px;
+            width: 500px;
+            border: 8px double black;
+            background-color: honeydew;
+    
+        }
+     .head{
+        height: 100px;
+        width: 120px;
+        background:radial-gradient(gray,blue);
+        border: 3px ridge black;
+        border-radius: 50px 50px 0px 0px;
+        position: absolute;
+        left: 200px;
+        top: 155px;animation-name:head ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes head {
+            50%{ 
+            transition-duration: 5s;
+            transition-timing-function: linear;
+            transform:rotatey(30deg);
+        }
+} 
+ .LE{
+    height: 20px;
+    width: 20px;
+    border: 3px solid black;
+    border-radius: 100%;
+    background:radial-gradient(blue,black);
+    position: absolute;
+    left: 215px;
+    top: 200px;
+    }
+ .RE{
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    background:radial-gradient(blue,black);
+    border-radius: 100%;
+    position: absolute;
+    top:200px;
+    left: 280px;
+ }
+  .body{
+    height: 140px;
+        width: 135px;
+        border: 5px ridge black;
+        background:radial-gradient(lightsteelblue,blue);
+        border-radius: 0px 20px 0px 20px;
+        position: absolute;
+        top: 270px;
+        left: 195px;
+ } 
+ 
+ .body:hover{
+    animation-name:body ;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+ }
+    @keyframes body {
+            0%{ 
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transform: rotate(70deg);
+            border-radius: 50px;
+            transform: rotateX(30px);
+            }
+ }
+ .LH{
+    height: 35px;
+    width: 110px;
+    background:radial-gradient(blue,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    animation-name:Lhand ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+ }
+    @keyframes Lhand {
+            0%{ 
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transform: rotate(70deg);
+        }
+ }
+ .RH{
+    height: 35px;
+    width: 110px;
+    background:radial-gradient(blue,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 270px;
+    left: 325px;
+    animation-name:Lhand ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+ }
+    @keyframes Lhand {
+            20%{ 
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transform: rotate(10deg);
+        }
+ }
+ .LL{
+    height: 120px;
+    width: 40px;
+    background: radial-gradient(blue,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 400px;
+    left: 195px;
+    animation-name:LLeg ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes LLeg {
+            0%{ 
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transform: rotate(130deg);
+        }
+ }
+ .RL{
+    height: 120px;
+    width: 40px;
+    background: radial-gradient(blue,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    animation-name:LLeg ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes LLeg {
+            20%{ 
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transform:rotateX(30deg);
+            transform:rotate(30deg);
+            transform: rotate(20deg);
+        }
+ }
+    </style>
+</head>
+<body>
+    <h1 class="h"><b>Robot</b></h1>
+    <div class="m">
+    <div class="head"></div>
+    <div class="LE"></div>
+    <div class="RE"></div>
+    <div class="body"></div>
+    <div class="LH"></div>
+    <div class="RH"></div>
+    <div class="LL"></div>
+    <div class="RL"></div>
+
+
+    </div>
+</body>
+</html>
